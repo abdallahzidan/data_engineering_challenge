@@ -32,4 +32,13 @@ this repo contains solution for analyzing streaming data of machines in real tim
 ![db](https://user-images.githubusercontent.com/18703395/213935721-4cf2ffbc-a4e0-403f-ba43-5fb777b9b46b.png)
 
 ## report
+-- report has been refreshed as the last step in the workflow 
+-- report is being generated using the following query : 
+with top_three_parameters as (
+select  product,production,val,dense_rank() over(partition by product order by production desc) as rank 
+from workorder inner join metrics 
+on product = id
+) select * from top_three_parameters where rank<4
+
+
 ![report](https://user-images.githubusercontent.com/18703395/213935728-3f047724-a392-48fe-8e8d-c2ef1b322f79.png)
