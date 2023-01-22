@@ -2,10 +2,11 @@
 this repo contains solution for analyzing streaming data of machines in real time
 
 ## System Design 
-- Stream.Py scripts loads the data which exists in resouces folder ( Mertrics.Json, Workorder.json)
+- Stream.Py scripts loads the data which exists in resouces folder ( Mertrics.Json, Workorder.json). 
 - By comparing latest time offset Stream.Py Streams only the new data then it will push to Webhook hosted in localhost:5000/
-- Webhooks has two end points listen to any Post Message and Push to RabbitMQ queues using Producer.py script 
-- Once message arrives to RabbitMQ, Both Consumers ( Mertrics_consumer.Py , Workorder_consumer.Py) will fetch the data and presist in Sqlite db
+- Webhooks has two end points listen to any Post Message and Push to RabbitMQ queues using Producer.py script . 
+- Once message arrives to RabbitMQ, Both Consumers ( Mertrics_consumer.Py , Workorder_consumer.Py) fetches the data & presist in Sqlite db. 
+- Below figure shows a high overview of Solution design/workflow.  
 ![360view](https://user-images.githubusercontent.com/18703395/213935687-70af8f6b-d2f9-4bf4-898b-5f7032e517ac.png)
 
 ## Rabbit MQ
