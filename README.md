@@ -17,6 +17,12 @@ this repo contains solution for analyzing streaming data of machines in real tim
 ![rabbitmq](https://user-images.githubusercontent.com/18703395/213935695-157f2985-9376-4b8f-b7d6-3727167e4c6d.png)
 
 ## Running workflow
+- Running the workflow requires running to be as following 
+1- Run Webhook server which listen to any POST messages and redirect to RabbitMQ
+2- Run Both Consumers ( Mertrics_consumer.Py , Workorder_consumer.Py) in order to fetch new data and presist in Sqlite
+3- Run Stream.Py to stream the incoming metrics & workorder data. There are two modes Initail and Incremental mode 
+- Below figure shows a demo for sending data through Stream.Py and whole workflow proccess the data accordingly 
+
 ![running](https://user-images.githubusercontent.com/18703395/213935698-503c2a2d-c43a-418c-a2b3-f5294be07636.png)
 
 ## Sqlite
