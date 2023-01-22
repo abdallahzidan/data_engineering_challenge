@@ -53,8 +53,19 @@ As installing Kafka would be much complicated while working using Windows OS, I 
  ![saveme](https://user-images.githubusercontent.com/18703395/213937313-c66489a4-bf8b-4332-b0a7-4cb097a19dba.png)
  
 ### Why Sqlite? 
+
+Zero Configuration / Installation and easy to have a quick Demo using it 
+
 ### How to Schedule the running ? 
-### Is it scalable ? 
+-- can be done using a batch file on windows or shell script 
+-- Airflow DAG woule be a good option but requires a lot of dependencies to have it up and running 
+
+### Is it scalable/Extendable ? 
+-- Webhooks could be scaled by having loadbalancer inbetween streamer and webhook
+-- Solution makes it easy to add new consumers and listen to topics from rabbitMQ without affecting current code 
+
 ### tolerate messages lost/ Network issues ? 
+-- consumers can push messages back to a queue " Failed_Queue" in order to process again 
+-- rest the offset allows to stream missed data 
 
 
