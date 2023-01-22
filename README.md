@@ -41,7 +41,7 @@ on product = id
 ) select * from top_three_parameters where rank<4
 
 
-![report](https://user-images.githubusercontent.com/18703395/213935728-3f047724-a392-48fe-8e8d-c2ef1b322f79.png)
+## ![report](https://user-images.githubusercontent.com/18703395/213935728-3f047724-a392-48fe-8e8d-c2ef1b322f79.png)
 
 ## Common Questions: 
 ### Why RabbitMQ? 
