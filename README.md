@@ -1,5 +1,5 @@
 # data_engineering_challenge
-this repo contains solution for analyzing streaming data of machines in real time
+Solution proposal for analyzing streaming data of machines in real time
 
 ## prerequisites 
 - Python v3.10.7
