@@ -1,0 +1,8 @@
+Flask
+request
+abort
+pandas
+Pyyaml
+sqlite3
+FastAPI
+pika
