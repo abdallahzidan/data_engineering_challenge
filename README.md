@@ -1,6 +1,14 @@
 # data_engineering_challenge
 this repo contains solution for analyzing streaming data of machines in real time
 
+## prerequistes 
+- Python v3.10.7
+- pip installed
+- pip install -r resources/requirements.txt
+- RabbitMQ 3.11.7
+- Erlang 25.2.1
+
+
 ## System Design 
 - Stream.Py scripts loads the data which exists in resouces folder ( Mertrics.Json, Workorder.json). 
 - By comparing latest time offset Stream.Py Streams only the new data then it will push to Webhook hosted in localhost:5000/
