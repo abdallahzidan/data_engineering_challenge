@@ -10,6 +10,10 @@ this repo contains solution for analyzing streaming data of machines in real tim
 ![360view](https://user-images.githubusercontent.com/18703395/213935687-70af8f6b-d2f9-4bf4-898b-5f7032e517ac.png)
 
 ## Rabbit MQ
+- RabbitMQ is being used for buffering incoming data of Mertrics & Workorder and for better system decoupling
+- There are two main queues Mertrics queue and Workorder queue 
+-  Below figure shows queues details running on RabbitMQ http://localhost:15672/#/queues
+
 ![rabbitmq](https://user-images.githubusercontent.com/18703395/213935695-157f2985-9376-4b8f-b7d6-3727167e4c6d.png)
 
 ## Running workflow
