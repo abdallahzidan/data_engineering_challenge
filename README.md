@@ -1,7 +1,7 @@
 # data_engineering_challenge
 this repo contains solution for analyzing streaming data of machines in real time
 
-## prerequistes 
+## prerequisites 
 - Python v3.10.7
 - pip installed
 - pip install -r resources/requirements.txt
