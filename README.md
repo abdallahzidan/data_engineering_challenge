@@ -26,6 +26,9 @@ this repo contains solution for analyzing streaming data of machines in real tim
 ![running](https://user-images.githubusercontent.com/18703395/213935698-503c2a2d-c43a-418c-a2b3-f5294be07636.png)
 
 ## Sqlite
+- Sqlite is being used as the storage layer in this workflow 
+- Sqlite stores the data into two main tables Mertrics , Workorder table 
+- Below figure shows inserted data in Both tables after Consumers process the data 
 ![db](https://user-images.githubusercontent.com/18703395/213935721-4cf2ffbc-a4e0-403f-ba43-5fb777b9b46b.png)
 
 ## report
