@@ -1,0 +1,20 @@
+version: 1.0
+
+src:
+  metrics_relative_path: resources/metrics.json
+  workorder_relative_path: resources/workorder.json
+
+database:
+  type: sqlite
+  url: sqlite.db
+  schema: sqlite
+
+broker:
+  host: localhost
+  port: 15672
+
+webhooks:
+  metrics: http://127.0.0.1:5000/metrics_webhook
+  workorder: http://127.0.0.1:5000/workorder_webhook
+
+InitialLoad: True
