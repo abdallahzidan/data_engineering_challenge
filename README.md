@@ -42,3 +42,13 @@ on product = id
 
 
 ![report](https://user-images.githubusercontent.com/18703395/213935728-3f047724-a392-48fe-8e8d-c2ef1b322f79.png)
+
+## Common Questions: 
+### Why RabbitMQ? 
+### Why Webhooks? 
+### Why Sqlite? 
+### How to Schedule the running ? 
+### Is it scalable ? 
+### tolerate messages lost/ Network issues ? 
+
+
