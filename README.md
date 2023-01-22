@@ -45,7 +45,12 @@ on product = id
 
 ## Common Questions: 
 ### Why RabbitMQ? 
-### Why Webhooks? 
+As installing Kafka would be much complicated while working using Windows OS, I prefered using RabbitMQ also for less configuratins
+### Why Webhooks?
+
+Instead of implementing Rest API and call to ask for new data, Webhooks is a good option to stream the new changes to Message Broker in real time once we got new data
+ ![saveme](https://user-images.githubusercontent.com/18703395/213937313-c66489a4-bf8b-4332-b0a7-4cb097a19dba.png)
+ 
 ### Why Sqlite? 
 ### How to Schedule the running ? 
 ### Is it scalable ? 
